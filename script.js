@@ -3,18 +3,7 @@ var quoted = [ "Batman", "Joker", "Superman", "Ironman", "Spiderman", "Thor", "W
 var greets = [ 'Hello', 'Howdy', 'Yo', 'Sup', 'Wazzup', 'Salutations', 'Hey', 'Hi', 'Greetings', 'Aloha', 'Namaste', 'Hiya', 'Yello', 'Holla', 'Peace' ];
 // Important: keep the number of greets, quotes, and backgrounds the same
 var TOTAL_PRESETS = greets.length;
-// Gets weather for requested location, appends to page
-function getWeather(location) {
-	$.simpleWeather({
-		location: location,
-		success: function(weather) {
-			$('.weather').html('In ' + weather.city + ', ' + weather.region + ', the weather is ' + weather.currently + ',<br>the temperature is ' + weather.temp + '&deg;, and the wind is ' + weather.wind.speed + weather.units.speed + ' ' + weather.wind.direction);
-		},
-		error: function(error)   {
-			$('.weather').html('Sorry, there has been a problem retrieving the weather information.');
-		}
-	});
-}
+
 // Master refresh function; appends random greeting, quote, and background
 function refreshStuffs() {
 	var randNum = Math.floor((Math.random() * TOTAL_PRESETS));
@@ -24,12 +13,6 @@ function refreshStuffs() {
 		return c.replace(/(^|\s)bg\S+/g, '');
 	}).addClass('bg' + (randNum + 1));
 
-	// Geolocates the user, otherwise defaulting to Mumbai (2295411)
-	if('geolocation' in navigator) {
-		navigator.geolocation.getCurrentPosition(function(position) {
-	    	getWeather(position.coords.latitude + ',' + position.coords.longitude);
-	  	});
-	} else { getWeather(2295411); }
 }
 // Initializes main keyboard nav
 function bindMousetraps() {
