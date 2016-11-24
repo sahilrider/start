@@ -1,7 +1,7 @@
 # start [https://sahilrider.github.io/start/](https://sahilrider.github.io/start/)
 Personal new tab page with bookmarks, quote, and gradient background.
 
-![https://krashcan.github.io/start/](screenshot.png)
+![https://sahilrider.github.io/start/](screenshot.png)
 
 The background gradient randomizes on page load, as does the quote.
 
