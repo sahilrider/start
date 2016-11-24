@@ -1,4 +1,4 @@
-# start [https://krashcan.github.io/start/](https://krashcan.github.io/start/)
+# start [https://sahilrider.github.io/start/](https://sahilrider.github.io/start/)
 Personal new tab page with bookmarks, quote, and gradient background.
 
 ![https://krashcan.github.io/start/](screenshot.png)
@@ -14,6 +14,6 @@ You could also use [New Tab Override for Firefox](https://addons.mozilla.org/en-
 
 BTW, it's super fast. DOMContentLoaded of ~225ms (~150ms as an extension!!) :D
 
-Forked from @oswalpalash
+Forked from @krashcan
 
-[@krashcan](http://facebook.com/ashish.iglesias)
+[@sahilrider](https://www.facebook.com/sahilrider23)
